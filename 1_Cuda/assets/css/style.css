@@ -1,0 +1,1250 @@
+.clear:before, .clear:after {
+  content: ' ';
+  display: table; }
+
+.clear {
+  *zoom: 1; }
+  .clear:after {
+    clear: both; }
+
+body {
+  position: relative;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0; }
+
+.container {
+  padding: 60px 150px 0 150px;
+  position: relative;
+  clear: both;
+  padding-bottom: 130px; }
+
+.welcome {
+  background-color: #87509c; }
+
+.welcome-text {
+  text-align: center;
+  clear: both;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  width: 72%;
+  margin: auto;
+  margin-bottom: 60px; }
+
+.panel {
+  float: right;
+  vertical-align: middle;
+  margin-bottom: 145px; }
+  .panel a {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #87509c;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    height: 35px;
+    cursor: pointer;
+    line-height: 35px;
+    padding: 0 25px; }
+    .panel a:hover {
+      background-color: #643a79;
+      padding: 0 25px; }
+  .panel a {
+    color: #fff;
+    text-decoration: none; }
+  .panel .active {
+    background-color: #643a79; }
+
+.logo {
+  float: left; }
+
+.welcome-button-wrapper {
+  text-align: center; }
+
+.welcome-button {
+  display: inline-block;
+  height: 75px;
+  width: 295px;
+  background-color: #eb7d4b;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 5px #c86a40;
+  cursor: pointer;
+  margin: auto;
+  font-weight: 600; }
+  .welcome-button:active {
+    box-shadow: 0 2px #c86a40;
+    -ms-transform: translateY(4px);
+        transform: translateY(4px); }
+
+.services {
+  background-color: #17c2a4;
+  color: #fff; }
+
+.services-header {
+  margin-bottom: 80px; }
+
+.services-content {
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin: auto; }
+  .services-content img {
+    max-height: 125px;
+    margin-bottom: 40px; }
+  .services-content h1 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700; }
+  .services-content h2 {
+    font-size: 16px;
+    color: #48c1e9; }
+  .services-content p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 10%; }
+
+.services-line {
+  width: 87px;
+  height: 5px;
+  background-color: #14a58c;
+  margin: auto;
+  margin-bottom: 25px; }
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .container {
+    max-width: 1140px; }
+  .welcome-hidden-menu {
+    display: none; }
+  .services-header h1 {
+    text-align: center; }
+    .services-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .team-header h1 {
+    text-align: center; }
+    .team-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .skills-header h1 {
+    text-align: center; }
+    .skills-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .portfolio-header h1 {
+    text-align: center; }
+    .portfolio-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .testimonials-header h1 {
+    text-align: center; }
+    .testimonials-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .getInTouch-header h1 {
+    text-align: center; }
+    .getInTouch-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .services-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .team-description {
+    font-size: 18px;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .skills-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .portfolio-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .testimonials-description {
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .getInTouch-description {
+    font-size: 18px;
+    width: 66%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .portfolio-content .portfolio-img-wrapper {
+    float: left;
+    padding: 8px;
+    width: 48%; }
+    .portfolio-content .portfolio-img-wrapper div {
+      text-align: center; }
+    .portfolio-content .portfolio-img-wrapper img {
+      display: inline-block;
+      margin-bottom: 30px; }
+    .portfolio-content .portfolio-img-wrapper .portfolio-img-text {
+      font-size: 18px;
+      margin-bottom: 85px; }
+  .portfolio-panel {
+    float: right;
+    vertical-align: middle; }
+    .portfolio-panel a {
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #ebc985;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #45433e;
+      font-size: 16px;
+      height: 35px;
+      cursor: pointer;
+      line-height: 35px;
+      padding: 0 25px; }
+      .portfolio-panel a:hover {
+        background-color: #fff;
+        padding: 0 25px; }
+  .portfolio-button {
+    display: inline-block;
+    height: 75px;
+    width: 295px;
+    background-color: #17c2a4;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #14a58c;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .portfolio-button:active {
+      box-shadow: 0 2px #14a58c;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .getInTouch-button {
+    display: inline-block;
+    height: 75px;
+    width: 295px;
+    background-color: #30bae7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #299ec5;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .getInTouch-button:active {
+      box-shadow: 0 2px #299ec5;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .testimonials-wrapper {
+    width: 46%; }
+    .testimonials-wrapper .testimonials-circle {
+      float: left;
+      width: 0px;
+      height: 0px;
+      border: 50px solid #787878;
+      border-radius: 50px;
+      margin: auto;
+      position: relative; }
+    .testimonials-wrapper .testimonials-text {
+      max-width: 70%;
+      float: right; }
+  .level1 {
+    margin-bottom: 100px; }
+  .input-wrapper {
+    width: 100%; }
+    .input-wrapper .input-placeholder {
+      width: 48%; }
+      .input-wrapper .input-placeholder input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 20px; }
+      .input-wrapper .input-placeholder textarea {
+        width: 100%;
+        padding: 18px 20px; }
+    .input-wrapper .textarea div {
+      top: 15px; }
+    .input-wrapper .second {
+      float: right;
+      margin-left: 1%; }
+    .input-wrapper .first {
+      display: inline-block;
+      margin-right: 1%; }
+  .footer-content {
+    padding: 20px 30px;
+    font-size: 24px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px; }
+  .services-header h1 {
+    text-align: center; }
+    .services-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .team-header h1 {
+    text-align: center; }
+    .team-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .skills-header h1 {
+    text-align: center; }
+    .skills-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .portfolio-header h1 {
+    text-align: center; }
+    .portfolio-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .testimonials-header h1 {
+    text-align: center; }
+    .testimonials-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .getInTouch-header h1 {
+    text-align: center; }
+    .getInTouch-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .services-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .team-description {
+    font-size: 18px;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .skills-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .portfolio-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .testimonials-description {
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .getInTouch-description {
+    font-size: 18px;
+    width: 66%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .welcome-hidden-menu {
+    display: none; }
+  .services-content {
+    width: 46%;
+    padding-bottom: 30px;
+    transition: width 2s, height 4s, transform 2s; }
+    .services-content img {
+      margin-bottom: 25px; }
+  div.team-content {
+    width: 46%;
+    padding-bottom: 30px;
+    transition: width 2s, height 4s, transform 2s; }
+  div.skills-content {
+    width: 46%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    transition: width 2s, height 4s, transform 2s; }
+  .portfolio-img-wrapper {
+    max-width: 47%;
+    float: left; }
+    .portfolio-img-wrapper div {
+      text-align: center; }
+    .portfolio-img-wrapper img {
+      width: 100%;
+      max-width: 500px; }
+    .portfolio-img-wrapper .portfolio-img-text {
+      font-size: 18px;
+      margin-bottom: 85px; }
+  .portfolio-panel {
+    float: right;
+    vertical-align: middle; }
+    .portfolio-panel a {
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #ebc985;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #45433e;
+      font-size: 16px;
+      height: 35px;
+      cursor: pointer;
+      line-height: 35px;
+      padding: 0 25px; }
+      .portfolio-panel a:hover {
+        background-color: #fff;
+        padding: 0 25px; }
+  .portfolio-button {
+    display: inline-block;
+    height: 75px;
+    width: 295px;
+    background-color: #17c2a4;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #14a58c;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .portfolio-button:active {
+      box-shadow: 0 2px #14a58c;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .getInTouch-button {
+    display: inline-block;
+    height: 75px;
+    width: 295px;
+    background-color: #30bae7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #299ec5;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .getInTouch-button:active {
+      box-shadow: 0 2px #299ec5;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .testimonials-wrapper {
+    width: 45%; }
+    .testimonials-wrapper .testimonials-circle {
+      float: left;
+      width: 0px;
+      height: 0px;
+      border: 50px solid #787878;
+      border-radius: 50px;
+      margin: auto;
+      position: relative; }
+    .testimonials-wrapper .testimonials-text {
+      max-width: 64%;
+      margin-left: 10px;
+      float: right; }
+  .level1 {
+    margin-bottom: 80px; }
+  .input-wrapper {
+    width: 100%; }
+    .input-wrapper .input-placeholder {
+      width: 48%; }
+      .input-wrapper .input-placeholder input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 20px; }
+      .input-wrapper .input-placeholder textarea {
+        width: 100%;
+        padding: 18px 20px; }
+    .input-wrapper .textarea div {
+      top: 15; }
+    .input-wrapper .second {
+      float: right;
+      margin-left: 1%; }
+    .input-wrapper .first {
+      display: inline-block;
+      margin-right: 1%; }
+  .footer-content {
+    padding: 20px;
+    font-size: 24px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px; }
+  .panel {
+    display: none; }
+  .services-header h1 {
+    text-align: center; }
+    .services-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .team-header h1 {
+    text-align: center; }
+    .team-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .skills-header h1 {
+    text-align: center; }
+    .skills-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .portfolio-header h1 {
+    text-align: center; }
+    .portfolio-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .testimonials-header h1 {
+    text-align: center; }
+    .testimonials-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .getInTouch-header h1 {
+    text-align: center; }
+    .getInTouch-header h1 h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .services-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .team-description {
+    font-size: 18px;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .skills-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .portfolio-description {
+    font-size: 18px;
+    width: 51%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .testimonials-description {
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .getInTouch-description {
+    font-size: 18px;
+    width: 66%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px; }
+  .welcome-hidden-menu {
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 40px; }
+    .welcome-hidden-menu div {
+      display: block;
+      width: 40px;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px; }
+  .services-content {
+    width: 45%; }
+  .team-content h2 {
+    text-align: center; }
+  div.team-content {
+    width: 45%;
+    margin: 25px 10px; }
+  div.skills-content {
+    width: 45%; }
+  .portfolio-img-wrapper {
+    float: none;
+    width: 100%;
+    display: block; }
+    .portfolio-img-wrapper div {
+      margin: auto;
+      margin-bottom: 30px;
+      text-align: center; }
+      .portfolio-img-wrapper div img {
+        max-width: 100%;
+        display: inline-block; }
+      .portfolio-img-wrapper div .portfolio-img-text {
+        font-size: 18px;
+        margin-bottom: 85px; }
+  .portfolio-panel {
+    float: right;
+    vertical-align: middle; }
+    .portfolio-panel a {
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #ebc985;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #45433e;
+      font-size: 16px;
+      height: 35px;
+      cursor: pointer;
+      line-height: 35px;
+      padding: 0 25px; }
+      .portfolio-panel a:hover {
+        background-color: #fff;
+        padding: 0 25px; }
+  .portfolio-button {
+    display: inline-block;
+    height: 75px;
+    width: 295px;
+    background-color: #17c2a4;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #14a58c;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .portfolio-button:active {
+      box-shadow: 0 2px #14a58c;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .getInTouch-button {
+    display: inline-block;
+    height: 75px;
+    width: 295px;
+    background-color: #30bae7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #299ec5;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .getInTouch-button:active {
+      box-shadow: 0 2px #299ec5;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .testimonials-text {
+    float: right;
+    max-width: 75%; }
+    .testimonials-text h1, .testimonials-text h2 {
+      text-align: right; }
+  .testimonials-circle {
+    float: left;
+    width: 0px;
+    height: 0px;
+    border: 50px solid #787878;
+    border-radius: 50px;
+    margin: auto;
+    position: relative; }
+  .input-wrapper {
+    width: 100%; }
+    .input-wrapper .input-placeholder {
+      width: 48%; }
+      .input-wrapper .input-placeholder input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 20px; }
+      .input-wrapper .input-placeholder textarea {
+        width: 100%;
+        padding: 18px 20px; }
+    .input-wrapper .textarea div {
+      top: 15px; }
+    .input-wrapper .second {
+      float: right;
+      margin-left: 1%; }
+    .input-wrapper .first {
+      display: inline-block;
+      margin-right: 1%; }
+  .footer-content {
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 24px; } }
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 50px; }
+  .panel {
+    display: none; }
+  .welcome-text {
+    font-size: 20px; }
+  .welcome-hidden-menu {
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 30px; }
+    .welcome-hidden-menu div {
+      display: block;
+      width: 40px;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px; }
+  .welcome-button {
+    width: 200px;
+    height: 50px;
+    font-size: 14px; }
+  .services-content {
+    width: 45%;
+    margin: 30px auto;
+    float: none; }
+  div.team-content {
+    width: 100%;
+    margin: 20px auto; }
+  .services-header h1 {
+    text-align: center; }
+    .services-header h1 h1 {
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .team-header h1 {
+    text-align: center; }
+    .team-header h1 h1 {
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .skills-header h1 {
+    text-align: center; }
+    .skills-header h1 h1 {
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .portfolio-header h1 {
+    text-align: center; }
+    .portfolio-header h1 h1 {
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .testimonials-header h1 {
+    text-align: center; }
+    .testimonials-header h1 h1 {
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .getInTouch-header h1 {
+    text-align: center; }
+    .getInTouch-header h1 h1 {
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .services-description {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px; }
+  .team-description {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px; }
+  .skills-description {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px; }
+  .portfolio-description {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+  .testimonials-description {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+  .getInTouch-description {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+  .team-content h2 {
+    text-align: center; }
+  div.skills-content {
+    width: 100%;
+    margin-bottom: 30px; }
+  .portfolio-img-wrapper {
+    float: none;
+    width: 100%;
+    display: block; }
+    .portfolio-img-wrapper div {
+      margin: auto;
+      margin-bottom: 15px;
+      text-align: center; }
+      .portfolio-img-wrapper div img {
+        max-width: 100%;
+        display: inline-block;
+        margin-bottom: 25px; }
+      .portfolio-img-wrapper div .portfolio-img-text {
+        margin-bottom: 25px;
+        font-size: 15px; }
+  .portfolio-panel {
+    float: right;
+    vertical-align: middle; }
+    .portfolio-panel a {
+      display: inline-block;
+      background-color: #ebc985;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #45433e;
+      padding: 0px 9px;
+      font-size: 13px;
+      margin: 3px;
+      height: 35px;
+      cursor: pointer;
+      line-height: 35px; }
+      .portfolio-panel a:hover {
+        background-color: #fff;
+        padding: 0px 9px;
+        font-size: 13px;
+        margin: 3px; }
+  .portfolio-button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    background-color: #17c2a4;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #14a58c;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .portfolio-button:active {
+      box-shadow: 0 2px #14a58c;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .getInTouch-button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    background-color: #30bae7;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px #299ec5;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600; }
+    .getInTouch-button:active {
+      box-shadow: 0 2px #299ec5;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+  .testimonials-text {
+    text-align: center; }
+  .testimonials-circle {
+    width: 0px;
+    height: 0px;
+    border: 50px solid #787878;
+    border-radius: 50px;
+    margin: auto;
+    position: relative;
+    margin: 25px auto;
+    float: none; }
+  .input-wrapper {
+    width: 100%; }
+    .input-wrapper .input-placeholder {
+      width: 100%; }
+      .input-wrapper .input-placeholder input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 25px;
+        padding: 25px 20px; }
+      .input-wrapper .input-placeholder textarea {
+        width: 100%;
+        padding: 15px 20px; }
+    .input-wrapper .textarea div {
+      top: 15px; }
+    .input-wrapper .first, .input-wrapper .second {
+      float: none; }
+  .footer-content {
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 18px; } }
+
+.team {
+  background-color: #e7f1f8;
+  color: #3c4761; }
+
+.team-header {
+  margin-bottom: 80px; }
+
+.team-content {
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin: auto; }
+  .team-content img {
+    max-height: 125px;
+    margin-bottom: 40px; }
+  .team-content h1 {
+    font-size: 24px;
+    color: #27283d;
+    font-weight: 700; }
+  .team-content h2 {
+    font-size: 16px;
+    color: #48c1e9; }
+  .team-content p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 10%; }
+  .team-content .circle {
+    width: 0px;
+    height: 0px;
+    border: 100px solid #878787;
+    border-radius: 100px;
+    margin: auto;
+    position: relative; }
+  .team-content .team-icons .circle-min {
+    position: relative;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 17px solid #bdd1df;
+    border-radius: 17px;
+    margin: auto; }
+    .team-content .team-icons .circle-min .fa {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.team-line {
+  width: 87px;
+  height: 5px;
+  background-color: #bdd1df;
+  margin: auto;
+  margin-bottom: 25px; }
+
+.skills {
+  background-color: #fff;
+  color: #3c4761; }
+
+.skills-header {
+  margin-bottom: 80px; }
+
+.skills-content {
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin: auto;
+  color: #a4a9b5; }
+  .skills-content img {
+    max-height: 125px;
+    margin-bottom: 40px; }
+  .skills-content h1 {
+    font-size: 24px;
+    color: #27283d;
+    font-weight: 700; }
+  .skills-content h2 {
+    font-size: 16px;
+    color: #48c1e9; }
+  .skills-content p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 10%; }
+  .skills-content .first {
+    width: 0px;
+    height: 0px;
+    border: 80px solid #dfe8ed;
+    border-radius: 80px;
+    margin: auto;
+    position: relative; }
+    .skills-content .first .circle-sector {
+      border-radius: 100%;
+      width: 161px;
+      height: 161px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      background-image: linear-gradient(90deg, transparent 50%, #30bae7 50%), linear-gradient(50deg, #30bae7 50%, transparent 50%); }
+  .skills-content .second {
+    width: 0px;
+    height: 0px;
+    border: 80px solid #dfe8ed;
+    border-radius: 80px;
+    margin: auto;
+    position: relative; }
+    .skills-content .second .circle-sector {
+      border-radius: 100%;
+      width: 161px;
+      height: 161px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      background-image: linear-gradient(90deg, transparent 50%, #d74680 50%), linear-gradient(0deg, #d74680 50%, transparent 50%); }
+  .skills-content .third {
+    width: 0px;
+    height: 0px;
+    border: 80px solid #dfe8ed;
+    border-radius: 80px;
+    margin: auto;
+    position: relative; }
+    .skills-content .third .circle-sector {
+      border-radius: 100%;
+      width: 161px;
+      height: 161px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      background-image: linear-gradient(90deg, transparent 50%, #15c7a8 50%), linear-gradient(-40deg, #15c7a8 50%, transparent 50%); }
+  .skills-content .fourth {
+    width: 0px;
+    height: 0px;
+    border: 80px solid #dfe8ed;
+    border-radius: 80px;
+    margin: auto;
+    position: relative; }
+    .skills-content .fourth .circle-sector {
+      border-radius: 100%;
+      width: 161px;
+      height: 161px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      background-image: linear-gradient(90deg, transparent 50%, #eb7d4b 50%), linear-gradient(40deg, #eb7d4b 50%, transparent 50%); }
+  .skills-content .circle-center {
+    width: 0px;
+    border: 70px solid #fff;
+    height: 0px;
+    border-radius: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+  .skills-content span {
+    font-size: 50px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+
+.skills-line {
+  width: 87px;
+  height: 5px;
+  background-color: #dfe8ed;
+  margin: auto;
+  margin-bottom: 25px; }
+
+.portfolio {
+  background-color: #ffdd99;
+  color: #393939; }
+
+.portfolio-header {
+  margin-bottom: 40px; }
+
+.portfolio-line {
+  width: 87px;
+  height: 5px;
+  background-color: #e5c37f;
+  margin: auto;
+  margin-bottom: 25px; }
+
+.portfolio-panel {
+  float: none;
+  text-align: center;
+  padding-bottom: 60px; }
+
+.portfolio-content .portfolio-img-wrapper {
+  padding: 8px; }
+  .portfolio-content .portfolio-img-wrapper img {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%; }
+  .portfolio-content .portfolio-img-wrapper .portfolio-img-text {
+    text-align: center;
+    text-transform: uppercase; }
+
+.portfolio-button-wrapper {
+  text-align: center; }
+
+.testimonials {
+  background-color: #d74680;
+  color: #fff; }
+
+.testimonials-header {
+  margin-bottom: 40px; }
+
+.testimonials-line {
+  width: 87px;
+  height: 5px;
+  background-color: #b73c6d;
+  margin: auto;
+  margin-bottom: 25px; }
+
+.testimonials-content .testimonials-wrapper {
+  float: left;
+  padding: 15px; }
+  .testimonials-content .testimonials-wrapper .testimonials-text p {
+    margin: 0;
+    font-size: 21px;
+    font-style: italic; }
+  .testimonials-content .testimonials-wrapper .testimonials-text h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .testimonials-content .testimonials-wrapper .testimonials-text h2 {
+    font-size: 18px;
+    color: #ffdd99;
+    margin: 0; }
+
+.level2 {
+  clear: both; }
+
+.getInTouch {
+  background-color: #3c5499;
+  color: #fff; }
+
+.getInTouch-header {
+  margin-bottom: 75px; }
+
+.getInTouch-line {
+  width: 87px;
+  height: 5px;
+  background-color: #273a71;
+  margin: auto;
+  margin-bottom: 25px; }
+
+form {
+  width: 74%;
+  margin: auto; }
+
+.input-wrapper {
+  width: 100%; }
+  .input-wrapper .input-placeholder {
+    position: relative; }
+    .input-wrapper .input-placeholder input {
+      width: 100%;
+      background-color: #273a71;
+      border: none;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 18px;
+      font-family: 'Titillium Web', sans-serif; }
+    .input-wrapper .input-placeholder textarea {
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #273a71;
+      border: none;
+      min-height: 200px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 60px; }
+    .input-wrapper .input-placeholder :-ms-input-placeholder {
+      color: #fff;
+      font-size: 18px; }
+    .input-wrapper .input-placeholder ::placeholder {
+      color: #fff;
+      font-size: 18px; }
+  .input-wrapper .textarea {
+    width: 100%; }
+  .input-wrapper .input-placeholder input:valid + .placeholder {
+    display: none; }
+  .input-wrapper .input-placeholder textarea:valid + .placeholder {
+    display: none; }
+  .input-wrapper .placeholder {
+    position: absolute;
+    pointer-events: none;
+    top: 15px;
+    left: 25px;
+    margin: auto;
+    color: #ccc; }
+  .input-wrapper .placeholder span {
+    color: red; }
+
+.getInTouch-button-wrapper {
+  text-align: center; }
+
+.base {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  padding: 0;
+  background-color: #344b8e; }
+
+.footer-wrapper {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600; }
+
+.footer-content {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  background-color: #344b8e;
+  text-decoration: none; }
+  .footer-content:hover {
+    color: #30b4e2; }
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url(../fonts/Titillium/TitilliumWeb-Regular.ttf); }
