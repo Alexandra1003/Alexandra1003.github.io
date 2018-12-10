@@ -717,9 +717,9 @@ body {
     .input-wrapper .first {
       display: inline-block;
       margin-right: 1%; }
-  ul li {
+  .footer ul li {
     padding: 20px 30px; }
-    ul li .footer-content {
+    .footer ul li .footer-content {
       font-size: 24px; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -944,9 +944,9 @@ body {
     .input-wrapper .first {
       display: inline-block;
       margin-right: 1%; }
-  ul li {
+  .footer ul li {
     padding: 20px 20px; }
-    ul li .footer-content {
+    .footer ul li .footer-content {
       font-size: 24px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1201,6 +1201,12 @@ body {
       margin-right: 1%; }
   .footer {
     padding: 20px 0; }
+    .footer ul li {
+      padding: 10px 5px; }
+      .footer ul li .footer-content {
+        font-size: 24px;
+        padding-right: 10px;
+        padding-top: 10px; }
     .footer .footer-container {
       padding: 0; }
       .footer .footer-container .footer-wrapper {
@@ -1208,13 +1214,7 @@ body {
         font-weight: 400;
         word-spacing: 10px; }
         .footer .footer-container .footer-wrapper a {
-          font-size: 20px; }
-  ul li {
-    padding: 10px 5px; }
-    ul li .footer-content {
-      font-size: 24px;
-      padding-right: 10px;
-      padding-top: 10px; } }
+          font-size: 20px; } }
 
 @media (max-width: 767px) {
   .container {
@@ -1456,6 +1456,12 @@ body {
       float: none; }
   .footer {
     padding: 20px 0; }
+    .footer ul li {
+      padding: 10px 1px; }
+      .footer ul li .footer-content {
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: 18px; }
     .footer .footer-container {
       padding: 0; }
       .footer .footer-container .footer-wrapper {
@@ -1463,13 +1469,7 @@ body {
         font-weight: 400;
         word-spacing: 10px; }
         .footer .footer-container .footer-wrapper a {
-          font-size: 16px; }
-  ul li {
-    padding: 10px 1px; }
-    ul li .footer-content {
-      padding-right: 10px;
-      padding-top: 10px;
-      font-size: 18px; } }
+          font-size: 16px; } }
 
 .team {
   background-color: #e7f1f8;
