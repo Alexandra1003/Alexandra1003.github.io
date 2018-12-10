@@ -717,9 +717,10 @@ body {
     .input-wrapper .first {
       display: inline-block;
       margin-right: 1%; }
-  .footer-content {
-    padding: 20px 30px;
-    font-size: 24px; } }
+  ul li {
+    padding: 20px 30px; }
+    ul li .footer-content {
+      font-size: 24px; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
@@ -943,9 +944,10 @@ body {
     .input-wrapper .first {
       display: inline-block;
       margin-right: 1%; }
-  .footer-content {
-    padding: 20px;
-    font-size: 24px; } }
+  ul li {
+    padding: 20px 20px; }
+    ul li .footer-content {
+      font-size: 24px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -1207,10 +1209,12 @@ body {
         word-spacing: 10px; }
         .footer .footer-container .footer-wrapper a {
           font-size: 20px; }
-  .footer-content {
-    padding-right: 10px;
-    padding-top: 10px;
-    font-size: 24px; } }
+  ul li {
+    padding: 10px 5px; }
+    ul li .footer-content {
+      font-size: 24px;
+      padding-right: 10px;
+      padding-top: 10px; } }
 
 @media (max-width: 767px) {
   .container {
@@ -1460,10 +1464,12 @@ body {
         word-spacing: 10px; }
         .footer .footer-container .footer-wrapper a {
           font-size: 16px; }
-  .footer-content {
-    padding-right: 10px;
-    padding-top: 10px;
-    font-size: 18px; } }
+  ul li {
+    padding: 10px 1px; }
+    ul li .footer-content {
+      padding-right: 10px;
+      padding-top: 10px;
+      font-size: 18px; } }
 
 .team {
   background-color: #e7f1f8;
@@ -1804,15 +1810,15 @@ form {
   padding-top: 20px;
   text-align: center;
   font-weight: 500; }
-
-.footer-content {
-  display: inline-block;
-  color: #fff;
-  text-align: center;
-  background-color: #344b8e;
-  text-decoration: none; }
-  .footer-content:hover {
-    color: #30b4e2; }
+  .footer-wrapper ul li {
+    display: inline-block; }
+    .footer-wrapper ul li .footer-content {
+      color: #fff;
+      text-align: center;
+      background-color: #344b8e;
+      text-decoration: none; }
+      .footer-wrapper ul li .footer-content:hover {
+        color: #30b4e2; }
 
 @font-face {
   font-family: 'Titillium Web';
