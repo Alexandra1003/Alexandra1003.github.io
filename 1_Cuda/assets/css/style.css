@@ -1,22 +1,432 @@
-.clear:before, .clear:after {
-  content: ' ';
-  display: table; }
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+.header {
+  background-color: #87509c;
+  width: 100%;
+  padding: 60px 0 0 0; }
+  .header .logo {
+    float: left; }
+  .header .panel {
+    float: right;
+    vertical-align: middle; }
+    .header .panel a {
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #87509c;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      height: 35px;
+      cursor: pointer;
+      line-height: 35px;
+      padding: 0 25px; }
+      .header .panel a:hover {
+        background-color: #643a79;
+        padding: 0 25px; }
+    .header .panel ul li {
+      display: inline-block; }
+    .header .panel a {
+      color: #fff;
+      text-decoration: none; }
+    .header .panel .active {
+      background-color: #643a79; }
 
 .clear {
-  *zoom: 1; }
-  .clear:after {
-    clear: both; }
+  content: ' ';
+  display: table;
+  clear: both; }
 
 body {
   position: relative;
   font-family: 'Titillium Web', sans-serif;
   margin: 0; }
+  body ul, body li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  body a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p, body button {
+    margin: 0;
+    padding: 0; }
 
 .container {
-  padding: 60px 150px 0 150px;
+  text-align: center;
+  margin: 0 auto;
   position: relative;
   clear: both;
-  padding-bottom: 130px; }
+  padding-bottom: 110px; }
+
+.main {
+  width: 100%; }
 
 .welcome {
   background-color: #87509c; }
@@ -28,38 +438,8 @@ body {
   font-weight: 700;
   color: #fff;
   width: 72%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 60px; }
-
-.panel {
-  float: right;
-  vertical-align: middle;
-  margin-bottom: 145px; }
-  .panel a {
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #87509c;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    height: 35px;
-    cursor: pointer;
-    line-height: 35px;
-    padding: 0 25px; }
-    .panel a:hover {
-      background-color: #643a79;
-      padding: 0 25px; }
-  .panel a {
-    color: #fff;
-    text-decoration: none; }
-  .panel .active {
-    background-color: #643a79; }
-
-.logo {
-  float: left; }
 
 .welcome-button-wrapper {
   text-align: center; }
@@ -75,8 +455,10 @@ body {
   border: none;
   box-shadow: 0px 5px #c86a40;
   cursor: pointer;
-  margin: auto;
+  margin: 0 auto;
   font-weight: 600; }
+  .welcome-button:hover {
+    filter: grayscale(30%); }
   .welcome-button:active {
     box-shadow: 0 2px #c86a40;
     -ms-transform: translateY(4px);
@@ -85,118 +467,147 @@ body {
 .services {
   background-color: #17c2a4;
   color: #fff; }
+  .services .services-container {
+    width: 100%; }
 
 .services-header {
   margin-bottom: 80px; }
+  .services-header h6:after {
+    content: "";
+    margin: 5px auto;
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: #14a58c; }
 
 .services-content {
   text-align: center;
   float: left;
   width: 25%;
-  margin: auto; }
+  margin: 0 auto;
+  box-sizing: border-box; }
   .services-content img {
     max-height: 125px;
     margin-bottom: 40px; }
-  .services-content h1 {
+  .services-content h6 {
     font-size: 24px;
     color: #fff;
-    font-weight: 700; }
-  .services-content h2 {
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .services-content span {
     font-size: 16px;
-    color: #48c1e9; }
+    color: #48c1e9;
+    margin-bottom: 20px; }
   .services-content p {
     font-size: 18px;
-    font-weight: 300;
-    padding: 0 10%; }
-
-.services-line {
-  width: 87px;
-  height: 5px;
-  background-color: #14a58c;
-  margin: auto;
-  margin-bottom: 25px; }
+    font-weight: 300; }
 
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .container {
     max-width: 1140px; }
-  .welcome-hidden-menu {
+  .services, .team, .skills, .portfolio, .testimonials {
+    padding-top: 110px; }
+  .header-hidden-menu {
     display: none; }
-  .services-header h1 {
-    text-align: center; }
-    .services-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .team-header h1 {
-    text-align: center; }
-    .team-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .skills-header h1 {
-    text-align: center; }
-    .skills-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .portfolio-header h1 {
-    text-align: center; }
-    .portfolio-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .testimonials-header h1 {
-    text-align: center; }
-    .testimonials-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .getInTouch-header h1 {
-    text-align: center; }
-    .getInTouch-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
+  .services-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .team-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .skills-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .portfolio-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .testimonials-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .getInTouch-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
   .services-description {
     font-size: 18px;
     width: 51%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .team-description {
     font-size: 18px;
     width: 55%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .skills-description {
     font-size: 18px;
     width: 51%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .portfolio-description {
     font-size: 18px;
     width: 51%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .testimonials-description {
     font-size: 18px;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .getInTouch-description {
     font-size: 18px;
     width: 66%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
+  .services-content {
+    padding: 0 20px 30px; }
+  .team-content {
+    padding: 0 20px 30px; }
+  .avatar {
+    width: 0px;
+    height: 0px;
+    border: 100px solid #878787;
+    border-radius: 100px;
+    margin: 0 auto;
+    position: relative; }
   .portfolio-content .portfolio-img-wrapper {
     float: left;
     padding: 8px;
-    width: 48%; }
+    width: 50%; }
     .portfolio-content .portfolio-img-wrapper div {
       text-align: center; }
     .portfolio-content .portfolio-img-wrapper img {
@@ -236,8 +647,10 @@ body {
     border: none;
     box-shadow: 0px 5px #14a58c;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 600; }
+    .portfolio-button:hover {
+      filter: grayscale(30%); }
     .portfolio-button:active {
       box-shadow: 0 2px #14a58c;
       -ms-transform: translateY(4px);
@@ -253,12 +666,16 @@ body {
     border: none;
     box-shadow: 0px 5px #299ec5;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 600; }
+    .getInTouch-button:hover {
+      filter: grayscale(30%); }
     .getInTouch-button:active {
       box-shadow: 0 2px #299ec5;
       -ms-transform: translateY(4px);
           transform: translateY(4px); }
+  .getInTouch {
+    padding-top: 110px; }
   .testimonials-wrapper {
     width: 46%; }
     .testimonials-wrapper .testimonials-circle {
@@ -267,11 +684,18 @@ body {
       height: 0px;
       border: 50px solid #787878;
       border-radius: 50px;
-      margin: auto;
+      margin: 0 auto;
       position: relative; }
     .testimonials-wrapper .testimonials-text {
       max-width: 70%;
-      float: right; }
+      float: right;
+      font-size: 20px; }
+      .testimonials-wrapper .testimonials-text p {
+        margin: 0; }
+    .testimonials-wrapper h6 {
+      font-size: 24px; }
+    .testimonials-wrapper h2 {
+      font-size: 18px; }
   .level1 {
     margin-bottom: 100px; }
   .input-wrapper {
@@ -300,97 +724,114 @@ body {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px; }
-  .services-header h1 {
-    text-align: center; }
-    .services-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .team-header h1 {
-    text-align: center; }
-    .team-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .skills-header h1 {
-    text-align: center; }
-    .skills-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .portfolio-header h1 {
-    text-align: center; }
-    .portfolio-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .testimonials-header h1 {
-    text-align: center; }
-    .testimonials-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .getInTouch-header h1 {
-    text-align: center; }
-    .getInTouch-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
+  .services, .team, .skills, .portfolio, .testimonials {
+    padding-top: 110px; }
+  .services-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .team-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .skills-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .portfolio-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .testimonials-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
+  .getInTouch-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px; }
   .services-description {
     font-size: 18px;
     width: 51%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .team-description {
     font-size: 18px;
     width: 55%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .skills-description {
     font-size: 18px;
     width: 51%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .portfolio-description {
     font-size: 18px;
     width: 51%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .testimonials-description {
     font-size: 18px;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .getInTouch-description {
     font-size: 18px;
     width: 66%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
-  .welcome-hidden-menu {
+  .header-hidden-menu {
     display: none; }
   .services-content {
-    width: 46%;
-    padding-bottom: 30px;
-    transition: width 2s, height 4s, transform 2s; }
+    width: 50%;
+    padding: 0 20px 30px; }
     .services-content img {
       margin-bottom: 25px; }
   div.team-content {
-    width: 46%;
-    padding-bottom: 30px;
-    transition: width 2s, height 4s, transform 2s; }
+    width: 50%;
+    margin-bottom: 30px; }
   div.skills-content {
-    width: 46%;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    transition: width 2s, height 4s, transform 2s; }
+    width: 50%;
+    margin-bottom: 50px; }
+  .avatar {
+    width: 0px;
+    height: 0px;
+    border: 100px solid #878787;
+    border-radius: 100px;
+    margin: 0 auto;
+    position: relative; }
   .portfolio-img-wrapper {
-    max-width: 47%;
+    max-width: 50%;
     float: left; }
     .portfolio-img-wrapper div {
       text-align: center; }
@@ -431,8 +872,10 @@ body {
     border: none;
     box-shadow: 0px 5px #14a58c;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 600; }
+    .portfolio-button:hover {
+      filter: grayscale(30%); }
     .portfolio-button:active {
       box-shadow: 0 2px #14a58c;
       -ms-transform: translateY(4px);
@@ -448,12 +891,16 @@ body {
     border: none;
     box-shadow: 0px 5px #299ec5;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 600; }
+    .getInTouch-button:hover {
+      filter: grayscale(30%); }
     .getInTouch-button:active {
       box-shadow: 0 2px #299ec5;
       -ms-transform: translateY(4px);
           transform: translateY(4px); }
+  .getInTouch {
+    padding-top: 50px; }
   .testimonials-wrapper {
     width: 45%; }
     .testimonials-wrapper .testimonials-circle {
@@ -462,12 +909,19 @@ body {
       height: 0px;
       border: 50px solid #787878;
       border-radius: 50px;
-      margin: auto;
+      margin: 0 auto;
       position: relative; }
     .testimonials-wrapper .testimonials-text {
       max-width: 64%;
+      font-size: 20px;
       margin-left: 10px;
       float: right; }
+      .testimonials-wrapper .testimonials-text p {
+        margin: 0; }
+      .testimonials-wrapper .testimonials-text h6 {
+        font-size: 24px; }
+      .testimonials-wrapper .testimonials-text h2 {
+        font-size: 18px; }
   .level1 {
     margin-bottom: 80px; }
   .input-wrapper {
@@ -496,106 +950,134 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px; }
+  .services, .team, .skills, .portfolio, .testimonials {
+    padding-top: 110px; }
   .panel {
     display: none; }
-  .services-header h1 {
-    text-align: center; }
-    .services-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .team-header h1 {
-    text-align: center; }
-    .team-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .skills-header h1 {
-    text-align: center; }
-    .skills-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .portfolio-header h1 {
-    text-align: center; }
-    .portfolio-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .testimonials-header h1 {
-    text-align: center; }
-    .testimonials-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .getInTouch-header h1 {
-    text-align: center; }
-    .getInTouch-header h1 h1 {
-      font-size: 40px;
-      font-weight: 700;
-      text-transform: uppercase; }
+  .services-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .team-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .skills-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .portfolio-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .testimonials-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .getInTouch-header h6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px; }
   .services-description {
     font-size: 18px;
-    width: 51%;
-    margin: auto;
+    width: 71%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .team-description {
     font-size: 18px;
-    width: 55%;
-    margin: auto;
+    width: 65%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .skills-description {
     font-size: 18px;
-    width: 51%;
-    margin: auto;
+    width: 77%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .portfolio-description {
     font-size: 18px;
-    width: 51%;
-    margin: auto;
+    width: 77%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .testimonials-description {
     font-size: 18px;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
   .getInTouch-description {
     font-size: 18px;
     width: 66%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px; }
-  .welcome-hidden-menu {
+  .header-hidden-menu {
     display: block;
     float: right;
     cursor: pointer;
     margin-bottom: 40px; }
-    .welcome-hidden-menu div {
+    .header-hidden-menu div {
       display: block;
       width: 40px;
       height: 5px;
       background-color: #fff;
       margin: 6px; }
+  .avatar {
+    width: 0px;
+    height: 0px;
+    border: 100px solid #878787;
+    border-radius: 100px;
+    margin: 0 auto;
+    position: relative; }
   .services-content {
-    width: 45%; }
+    width: 50%;
+    padding: 0 20px 30px; }
   .team-content h2 {
     text-align: center; }
   div.team-content {
-    width: 45%;
-    margin: 25px 10px; }
+    width: 50%;
+    margin: 25px 0px; }
   div.skills-content {
-    width: 45%; }
+    width: 50%; }
   .portfolio-img-wrapper {
     float: none;
-    width: 100%;
+    width: 75%;
     display: block; }
     .portfolio-img-wrapper div {
-      margin: auto;
+      margin: 0 auto;
       margin-bottom: 30px;
       text-align: center; }
       .portfolio-img-wrapper div img {
@@ -624,6 +1106,10 @@ body {
       .portfolio-panel a:hover {
         background-color: #fff;
         padding: 0 25px; }
+  .welcome-button {
+    height: 65px;
+    width: 230px;
+    font-size: 16px; }
   .portfolio-button {
     display: inline-block;
     height: 75px;
@@ -635,8 +1121,13 @@ body {
     border: none;
     box-shadow: 0px 5px #14a58c;
     cursor: pointer;
-    margin: auto;
-    font-weight: 600; }
+    margin: 0 auto;
+    font-weight: 600;
+    height: 65px;
+    width: 230px;
+    font-size: 16px; }
+    .portfolio-button:hover {
+      filter: grayscale(30%); }
     .portfolio-button:active {
       box-shadow: 0 2px #14a58c;
       -ms-transform: translateY(4px);
@@ -652,25 +1143,41 @@ body {
     border: none;
     box-shadow: 0px 5px #299ec5;
     cursor: pointer;
-    margin: auto;
-    font-weight: 600; }
+    margin: 0 auto;
+    font-weight: 600;
+    height: 65px;
+    width: 230px;
+    font-size: 16px; }
+    .getInTouch-button:hover {
+      filter: grayscale(30%); }
     .getInTouch-button:active {
       box-shadow: 0 2px #299ec5;
       -ms-transform: translateY(4px);
           transform: translateY(4px); }
+  .getInTouch {
+    padding-top: 50px; }
   .testimonials-text {
     float: right;
-    max-width: 75%; }
-    .testimonials-text h1, .testimonials-text h2 {
+    max-width: 75%;
+    font-size: 20px; }
+    .testimonials-text p {
+      margin: 0; }
+    .testimonials-text h6, .testimonials-text h2 {
       text-align: right; }
+    .testimonials-text h6 {
+      font-size: 20px; }
+    .testimonials-text h2 {
+      font-size: 16px; }
   .testimonials-circle {
     float: left;
     width: 0px;
     height: 0px;
     border: 50px solid #787878;
     border-radius: 50px;
-    margin: auto;
+    margin: 0 auto;
     position: relative; }
+  .welcome-text {
+    font-size: 34px; }
   .input-wrapper {
     width: 100%; }
     .input-wrapper .input-placeholder {
@@ -690,6 +1197,16 @@ body {
     .input-wrapper .first {
       display: inline-block;
       margin-right: 1%; }
+  .footer {
+    padding: 20px 0; }
+    .footer .footer-container {
+      padding: 0; }
+      .footer .footer-container .footer-wrapper {
+        padding: 0;
+        font-weight: 400;
+        word-spacing: 10px; }
+        .footer .footer-container .footer-wrapper a {
+          font-size: 20px; }
   .footer-content {
     padding-right: 10px;
     padding-top: 10px;
@@ -699,20 +1216,26 @@ body {
   .container {
     width: 100%;
     box-sizing: border-box;
-    padding: 60px 50px; }
+    padding: 0 10px 80px; }
+  .logo img {
+    width: 90px; }
+  .header {
+    padding: 30px 0 0; }
+  .services, .team, .skills, .portfolio, .testimonials {
+    padding-top: 70px; }
   .panel {
     display: none; }
   .welcome-text {
     font-size: 20px; }
-  .welcome-hidden-menu {
+  .header-hidden-menu {
     display: block;
     float: right;
     cursor: pointer;
     margin-bottom: 30px; }
-    .welcome-hidden-menu div {
+    .header-hidden-menu div {
       display: block;
-      width: 40px;
-      height: 5px;
+      width: 35px;
+      height: 3px;
       background-color: #fff;
       margin: 6px; }
   .welcome-button {
@@ -720,92 +1243,108 @@ body {
     height: 50px;
     font-size: 14px; }
   .services-content {
-    width: 45%;
-    margin: 30px auto;
+    width: 70%;
+    padding: 0 20px;
+    margin: 40px auto;
     float: none; }
+    .services-content img {
+      max-height: 100px; }
   div.team-content {
     width: 100%;
     margin: 20px auto; }
-  .services-header h1 {
-    text-align: center; }
-    .services-header h1 h1 {
-      font-size: 25px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .team-header h1 {
-    text-align: center; }
-    .team-header h1 h1 {
-      font-size: 25px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .skills-header h1 {
-    text-align: center; }
-    .skills-header h1 h1 {
-      font-size: 25px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .portfolio-header h1 {
-    text-align: center; }
-    .portfolio-header h1 h1 {
-      font-size: 25px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .testimonials-header h1 {
-    text-align: center; }
-    .testimonials-header h1 h1 {
-      font-size: 25px;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .getInTouch-header h1 {
-    text-align: center; }
-    .getInTouch-header h1 h1 {
-      font-size: 25px;
-      font-weight: 700;
-      text-transform: uppercase; }
+  .services-header h6 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .team-header h6 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .skills-header h6 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .portfolio-header h6 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .testimonials-header h6 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .getInTouch-header h6 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
   .services-description {
     font-size: 16px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 40px; }
   .team-description {
     font-size: 16px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 40px; }
   .skills-description {
     font-size: 16px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 40px; }
   .portfolio-description {
     font-size: 16px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center; }
   .testimonials-description {
     font-size: 16px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center; }
   .getInTouch-description {
     font-size: 16px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center; }
   .team-content h2 {
     text-align: center; }
+  .avatar {
+    width: 0px;
+    height: 0px;
+    border: 80px solid #878787;
+    border-radius: 80px;
+    margin: 0 auto;
+    position: relative; }
   div.skills-content {
     width: 100%;
     margin-bottom: 30px; }
   .portfolio-img-wrapper {
     float: none;
-    width: 100%;
+    width: 75%;
     display: block; }
     .portfolio-img-wrapper div {
-      margin: auto;
+      margin: 0 auto;
       margin-bottom: 15px;
       text-align: center; }
       .portfolio-img-wrapper div img {
@@ -848,8 +1387,10 @@ body {
     border: none;
     box-shadow: 0px 5px #14a58c;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 600; }
+    .portfolio-button:hover {
+      filter: grayscale(30%); }
     .portfolio-button:active {
       box-shadow: 0 2px #14a58c;
       -ms-transform: translateY(4px);
@@ -865,20 +1406,31 @@ body {
     border: none;
     box-shadow: 0px 5px #299ec5;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 600; }
+    .getInTouch-button:hover {
+      filter: grayscale(30%); }
     .getInTouch-button:active {
       box-shadow: 0 2px #299ec5;
       -ms-transform: translateY(4px);
           transform: translateY(4px); }
+  .getInTouch {
+    padding-top: 50px; }
   .testimonials-text {
-    text-align: center; }
+    text-align: center;
+    font-size: 16px; }
+    .testimonials-text p {
+      margin-bottom: 15px; }
+    .testimonials-text h6 {
+      font-size: 18px; }
+    .testimonials-text h2 {
+      font-size: 14px; }
   .testimonials-circle {
     width: 0px;
     height: 0px;
     border: 50px solid #787878;
     border-radius: 50px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     margin: 25px auto;
     float: none; }
@@ -898,6 +1450,16 @@ body {
       top: 15px; }
     .input-wrapper .first, .input-wrapper .second {
       float: none; }
+  .footer {
+    padding: 20px 0; }
+    .footer .footer-container {
+      padding: 0; }
+      .footer .footer-container .footer-wrapper {
+        padding: 0;
+        font-weight: 400;
+        word-spacing: 10px; }
+        .footer .footer-container .footer-wrapper a {
+          font-size: 16px; }
   .footer-content {
     padding-right: 10px;
     padding-top: 10px;
@@ -906,93 +1468,101 @@ body {
 .team {
   background-color: #e7f1f8;
   color: #3c4761; }
+  .team .team-container {
+    width: 100%; }
 
 .team-header {
   margin-bottom: 80px; }
+  .team-header h6:after {
+    content: "";
+    margin: 5px auto;
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: #bdd1df; }
 
 .team-content {
   text-align: center;
   float: left;
   width: 25%;
-  margin: auto; }
+  margin: 0 auto;
+  box-sizing: border-box; }
   .team-content img {
     max-height: 125px;
     margin-bottom: 40px; }
-  .team-content h1 {
+  .team-content h6 {
     font-size: 24px;
     color: #27283d;
-    font-weight: 700; }
-  .team-content h2 {
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .team-content span {
     font-size: 16px;
-    color: #48c1e9; }
+    color: #48c1e9;
+    margin-bottom: 20px; }
   .team-content p {
     font-size: 18px;
-    font-weight: 300;
-    padding: 0 10%; }
-  .team-content .circle {
-    width: 0px;
-    height: 0px;
-    border: 100px solid #878787;
-    border-radius: 100px;
-    margin: auto;
-    position: relative; }
-  .team-content .team-icons .circle-min {
+    font-weight: 300; }
+  .team-content p {
+    margin-bottom: 15px; }
+  .team-content .team-icons .socials-icon {
     position: relative;
     display: inline-block;
-    width: 0px;
-    height: 0px;
-    border: 17px solid #bdd1df;
-    border-radius: 17px;
-    margin: auto; }
-    .team-content .team-icons .circle-min .fa {
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.team-line {
-  width: 87px;
-  height: 5px;
-  background-color: #bdd1df;
-  margin: auto;
-  margin-bottom: 25px; }
+    width: 32px;
+    height: 32px; }
+    .team-content .team-icons .socials-icon a {
+      line-height: 1.9;
+      display: block;
+      background: #bdd1df;
+      border-radius: 17px; }
+      .team-content .team-icons .socials-icon a:hover {
+        background-color: #d9e6f0; }
+    .team-content .team-icons .socials-icon .fa {
+      color: #fff; }
 
 .skills {
   background-color: #fff;
   color: #3c4761; }
+  .skills .skills-container {
+    width: 100%; }
 
 .skills-header {
   margin-bottom: 80px; }
+  .skills-header h6:after {
+    content: "";
+    margin: 5px auto;
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: #dfe8ed; }
 
 .skills-content {
   text-align: center;
   float: left;
   width: 25%;
-  margin: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
   color: #a4a9b5; }
   .skills-content img {
     max-height: 125px;
     margin-bottom: 40px; }
-  .skills-content h1 {
+  .skills-content h6 {
     font-size: 24px;
     color: #27283d;
-    font-weight: 700; }
-  .skills-content h2 {
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .skills-content span {
     font-size: 16px;
-    color: #48c1e9; }
+    color: #48c1e9;
+    margin-bottom: 20px; }
   .skills-content p {
     font-size: 18px;
-    font-weight: 300;
-    padding: 0 10%; }
+    font-weight: 300; }
   .skills-content .first {
     width: 0px;
     height: 0px;
     border: 80px solid #dfe8ed;
     border-radius: 80px;
-    margin: auto;
+    margin: 0 auto;
     position: relative; }
     .skills-content .first .circle-sector {
       border-radius: 100%;
@@ -1010,7 +1580,7 @@ body {
     height: 0px;
     border: 80px solid #dfe8ed;
     border-radius: 80px;
-    margin: auto;
+    margin: 0 auto;
     position: relative; }
     .skills-content .second .circle-sector {
       border-radius: 100%;
@@ -1028,7 +1598,7 @@ body {
     height: 0px;
     border: 80px solid #dfe8ed;
     border-radius: 80px;
-    margin: auto;
+    margin: 0 auto;
     position: relative; }
     .skills-content .third .circle-sector {
       border-radius: 100%;
@@ -1046,7 +1616,7 @@ body {
     height: 0px;
     border: 80px solid #dfe8ed;
     border-radius: 80px;
-    margin: auto;
+    margin: 0 auto;
     position: relative; }
     .skills-content .fourth .circle-sector {
       border-radius: 100%;
@@ -1070,7 +1640,7 @@ body {
     margin-right: -50%;
     -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
-  .skills-content span {
+  .skills-content .skills-perCent {
     font-size: 50px;
     font-weight: 300;
     position: absolute;
@@ -1078,14 +1648,10 @@ body {
     left: 50%;
     margin-right: -50%;
     -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-
-.skills-line {
-  width: 87px;
-  height: 5px;
-  background-color: #dfe8ed;
-  margin: auto;
-  margin-bottom: 25px; }
+        transform: translate(-50%, -50%);
+    color: #27283d; }
+  .skills-content p {
+    line-height: 75px; }
 
 .portfolio {
   background-color: #ffdd99;
@@ -1093,28 +1659,35 @@ body {
 
 .portfolio-header {
   margin-bottom: 40px; }
-
-.portfolio-line {
-  width: 87px;
-  height: 5px;
-  background-color: #e5c37f;
-  margin: auto;
-  margin-bottom: 25px; }
+  .portfolio-header h6:after {
+    content: "";
+    margin: 5px auto;
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: #e5c37f; }
 
 .portfolio-panel {
   float: none;
   text-align: center;
-  padding-bottom: 60px; }
+  margin-bottom: 60px;
+  border-radius: 5px; }
+  .portfolio-panel ul li {
+    display: inline-block; }
 
-.portfolio-content .portfolio-img-wrapper {
-  padding: 8px; }
-  .portfolio-content .portfolio-img-wrapper img {
-    display: inline-block;
-    margin-bottom: 30px;
-    width: 100%; }
-  .portfolio-content .portfolio-img-wrapper .portfolio-img-text {
-    text-align: center;
-    text-transform: uppercase; }
+.portfolio-content {
+  width: 100%; }
+  .portfolio-content .portfolio-img-wrapper {
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 0 auto; }
+    .portfolio-content .portfolio-img-wrapper img {
+      display: inline-block;
+      margin-bottom: 30px;
+      width: 100%; }
+    .portfolio-content .portfolio-img-wrapper .portfolio-img-text {
+      text-align: center;
+      text-transform: uppercase; }
 
 .portfolio-button-wrapper {
   text-align: center; }
@@ -1125,27 +1698,24 @@ body {
 
 .testimonials-header {
   margin-bottom: 40px; }
-
-.testimonials-line {
-  width: 87px;
-  height: 5px;
-  background-color: #b73c6d;
-  margin: auto;
-  margin-bottom: 25px; }
+  .testimonials-header h6:after {
+    content: "";
+    margin: 5px auto;
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: #b73c6d; }
 
 .testimonials-content .testimonials-wrapper {
   float: left;
-  padding: 15px; }
+  padding: 15px;
+  text-align: left; }
   .testimonials-content .testimonials-wrapper .testimonials-text p {
-    margin: 0;
-    font-size: 21px;
     font-style: italic; }
-  .testimonials-content .testimonials-wrapper .testimonials-text h1 {
-    font-size: 24px;
+  .testimonials-content .testimonials-wrapper .testimonials-text h6 {
     text-transform: uppercase;
     margin-bottom: 0; }
   .testimonials-content .testimonials-wrapper .testimonials-text h2 {
-    font-size: 18px;
     color: #ffdd99;
     margin: 0; }
 
@@ -1158,17 +1728,17 @@ body {
 
 .getInTouch-header {
   margin-bottom: 75px; }
-
-.getInTouch-line {
-  width: 87px;
-  height: 5px;
-  background-color: #273a71;
-  margin: auto;
-  margin-bottom: 25px; }
+  .getInTouch-header h6:after {
+    content: "";
+    margin: 5px auto;
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: #273a71; }
 
 form {
-  width: 74%;
-  margin: auto; }
+  width: 100%;
+  margin: 0 auto; }
 
 .input-wrapper {
   width: 100%; }
@@ -1210,7 +1780,7 @@ form {
     pointer-events: none;
     top: 15px;
     left: 25px;
-    margin: auto;
+    margin: 0 auto;
     color: #ccc; }
   .input-wrapper .placeholder span {
     color: red; }
@@ -1218,23 +1788,22 @@ form {
 .getInTouch-button-wrapper {
   text-align: center; }
 
-.base {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
 .footer {
-  position: absolute;
+  width: 100%;
+  background-color: #344b8e;
+  position: relative; }
+
+.footer-container {
   right: 0;
   bottom: 0;
   left: 0;
   height: 100%;
-  padding: 0;
-  background-color: #344b8e; }
+  padding: 0; }
 
 .footer-wrapper {
   padding-top: 20px;
   text-align: center;
-  font-weight: 600; }
+  font-weight: 500; }
 
 .footer-content {
   display: inline-block;
